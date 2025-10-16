@@ -25,5 +25,5 @@ For full experience:
 2. Start **Apache** and **MySQL** from the XAMPP Control Panel.  
 3. Open **phpMyAdmin** at [http://localhost/phpmyadmin](http://localhost/phpmyadmin).  
 4. Create a new database (you can name it `todolist`).  
-5. Import the `task.sql` file provided in this repository — it contains the table structure and sample data.
+5. Import the `tasks.sql` file provided in this repository — it contains the table structure and sample data.
 
