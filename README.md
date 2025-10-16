@@ -8,7 +8,7 @@ It allows users to add, view, and manage daily tasks in a graphical interface.
 
 For full experience:
 
-*Email features* -  can be used only after you paste your own sender and receiver email, with app password needed. You also have to set one of the task due date to (today) or (tomorrow) to make it triggered.
+*Email features* -  can be used only after you paste your own sender and receiver email, with app password needed. Paste both receiver and sender email with app password in the `MainController.java`. You also have to set one of the task due date to (today) or (tomorrow) to make it triggered.
 
 *Reccurence,RCC feature* - All RCC have been set to 'None' to prevent spam in database, feel free to play around with RCC when you create new task but not current ones.
 
