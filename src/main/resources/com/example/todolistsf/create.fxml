@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todolistsf.CreateTask">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="522.0" mnemonicParsing="false" onAction="#onCreateButtonClick" text="Create" />
+      <Text fill="#ef5241" layoutX="98.0" layoutY="93.0" stroke="#ef5241" strokeWidth="2.0" text="to Do List">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#ef5241" layoutX="117.0" layoutY="121.0" stroke="#ef5241" strokeWidth="0.5" text="- Create Task -">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="titleText" layoutX="72.0" layoutY="161.0" prefHeight="26.0" prefWidth="220.0" promptText="E.g. Finish Assignment" />
+      <Text layoutX="72.0" layoutY="151.0" stroke="#ef5241" strokeWidth="0.0" text="Title" />
+      <Text layoutX="72.0" layoutY="211.0" stroke="#ef5241" strokeWidth="0.0" text="Description" wrappingWidth="84.39727783203125" />
+      <Text layoutX="71.0" layoutY="289.0" stroke="#ef5241" strokeWidth="0.0" text="Due Date" />
+      <Text layoutX="71.0" layoutY="349.0" stroke="#ef5241" strokeWidth="0.0" text="Task Category" wrappingWidth="84.39727783203125" />
+      <Text layoutX="71.0" layoutY="408.0" stroke="#ef5241" strokeWidth="0.0" text="Priority Level" wrappingWidth="84.39727783203125" />
+      <Label fx:id="sucessText" layoutX="122.0" layoutY="566.0" style="-fx-background-color: lightgreen;" text="Successfully Added!" visible="false" />
+      <DatePicker fx:id="dateText" layoutX="73.0" layoutY="299.0" prefHeight="24.0" prefWidth="220.0" promptText="E.g. 2024-06-13" />
+      <TextArea fx:id="descriptionText" layoutX="72.0" layoutY="221.0" prefHeight="48.0" prefWidth="220.0" promptText="E.g. Complete the Java programming assignment" wrapText="true" />
+      <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToMainPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="failText" layoutX="112.0" layoutY="566.0" style="-fx-background-color: tomato;" text="Please fill in All spaces!" visible="false" />
+      <ComboBox fx:id="categoryTexts" layoutX="71.0" layoutY="361.0" prefHeight="26.0" prefWidth="220.0" promptText="Homework, Personal, Work" />
+      <ComboBox fx:id="priorityTexts" layoutX="71.0" layoutY="420.0" prefHeight="26.0" prefWidth="220.0" promptText="Low, Medium, High" />
+      <Text layoutX="71.0" layoutY="468.0" stroke="#ef5241" strokeWidth="0.0" text="Reccuring" wrappingWidth="84.39727783203125" />
+      <ComboBox fx:id="reccurence" layoutX="71.0" layoutY="480.0" prefHeight="26.0" prefWidth="220.0" promptText="Daily, Weekly, Monthly" />
+   </children>
+</AnchorPane>

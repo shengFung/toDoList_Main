@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todolistsf.Data">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="58.0" layoutY="225.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="233.0" style="-fx-background-color: white; -fx-padding: 15; -fx-background-radius: 15; -fx-border-color: #ef5241; -fx-border-radius: 15; -fx-border-width: 3; -fx-spacing: 50;" visible="false">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure?" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Remove" />
+         </children>
+      </VBox>
+      <Text fill="#ef5241" layoutX="92.0" layoutY="99.0" stroke="#ef5241" strokeWidth="2.0" text="to Do List">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#ef5241" layoutX="100.0" layoutY="127.0" stroke="#ef5241" strokeWidth="0.5" text="- Data Analytics -">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#goToMainPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Back.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="110.0" layoutY="190.0" strokeWidth="0.0" text="Total Task">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#30a62c" layoutX="38.0" layoutY="279.0" strokeWidth="0.0" text="Completed">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#eaae16" layoutX="209.0" layoutY="278.0" strokeWidth="0.0" text="Pending">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#4c2cff" layoutX="80.0" layoutY="393.0" strokeWidth="0.0" text="Completion Rate">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="496.0" strokeWidth="0.0" text="Task Categories">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="complete" fill="#30a62c" layoutX="38.0" layoutY="318.0" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="123.50390625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="pending" fill="#eaae16" layoutX="206.0" layoutY="319.0" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="93.3046875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="total" layoutX="110.0" layoutY="225.0" strokeWidth="0.0" text="5" textAlignment="CENTER" wrappingWidth="115.3828125">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="rate" fill="#4c2cff" layoutX="80.0" layoutY="427.0" strokeWidth="0.0" text="50%" textAlignment="CENTER" wrappingWidth="189.19921875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="homework" layoutX="79.0" layoutY="526.0" strokeWidth="0.0" text="Homework: 3" textAlignment="CENTER" wrappingWidth="177.234375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="personal" layoutX="79.0" layoutY="546.0" strokeWidth="0.0" text="Personal: 3" textAlignment="CENTER" wrappingWidth="177.234375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="work" layoutX="78.0" layoutY="566.0" strokeWidth="0.0" text="Work: 3" textAlignment="CENTER" wrappingWidth="177.234375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
